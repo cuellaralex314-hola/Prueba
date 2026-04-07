@@ -2,29 +2,29 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera página</title>
-    <link rel="stylesheet" href="estilos.css">
-    <style>
-        body {
-            background-color: lightblue;
-            font-family: Arial;
-            text-align: center;
-        }
 
-        h1 {
-            color: darkblue;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h2>Hola, soy Alex</h2>
-    <p>Esta es mi primera página web.</p>
-    <button onclick="saludar()">Haz clic</button>
 
-    <script src="script.js">
-        function saludar() {
-            alert("¡Hola!");
-        }
-    </script>
+    <header>
+        <h1>Hola, soy Alex</h1>
+        <p>Desarrolador en progreso</p>
+    </header>
+
+    <section class="card">
+        <h2>Sobre mí</h2>
+        <p>Estoy aprediendo HTML, CSS y JavaScript.</p>
+        <button onclick="saludar()">Saludar</button>
+    </section>
+
+    <footer>
+        <p>º 2026 Alex</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
