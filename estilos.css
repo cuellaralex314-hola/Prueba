@@ -59,3 +59,15 @@ header {
 html {
     scroll-behavior: smooth;
 }
+
+.proyecto {
+    background: #0f172a;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
