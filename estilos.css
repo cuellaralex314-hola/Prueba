@@ -71,3 +71,13 @@ html {
 .proyecto:hover {
     transform: scale(1.05);
 }
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #00c6ff;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+}
