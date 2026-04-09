@@ -16,11 +16,34 @@ header {
     margin-bottom: 20px;
 }
 
+.perfil-container {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff00cc, #0072ff, #ff00cc);
+    background-size: 300% 300%;
+    animation: borderAnimado 4s linear infinite;
+    box-shadow: 0 0 20px #00c6ff;
+}
+
 .perfil {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 3px solid #00c6ff;
+    display: block;
+}
+
+@keyframes borderAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .cards {
