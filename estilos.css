@@ -56,6 +56,15 @@ header {
     color: #00c6ff;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: white;
+    padding: 10px 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -91,4 +100,45 @@ a {
 .show {
     opacity: 1;
     transform: translateY(0);
-}   
+}
+
+.menu-toggle {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background: #111;
+        width: 200px;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 10px;
+
+    }
+    .nav.active {
+        display: flex;
+    }
+}

@@ -17,3 +17,16 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 elementos.forEach(el => observer.observe(el));
+
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    const toggle = document.querySelector(".menu-toggle");
+
+    menu.classList.toggle('active');
+
+    if (menu.classList.contains('active')) {
+        toggle.textContent = 'X';
+    } else {
+        toggle.textContent = '☰';
+    }
+}
